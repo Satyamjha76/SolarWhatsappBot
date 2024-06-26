@@ -26,7 +26,7 @@ def bot():
      msg = response.message("""Welcome to SolaxPower \n1.Today Yield \n2.Total Yield \n3.Current Power \n4.Total Saving Today \n5.Total Saving Till Now \n""")
     elif(user_msg=='1'):
        Result=SolarData.refresh()
-       msg=response.message(f"Today Yield is {Result[0]}  Kwh ")
+       msg=response.message(f"Today Yield is {Result[0]} Kwh ")
     elif(user_msg=='2'):
        Result=SolarData.refresh()
        msg=response.message(f"Total Yield is {Result[1]} Kwh ")
